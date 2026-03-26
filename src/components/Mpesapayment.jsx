@@ -12,6 +12,7 @@ const Mpesapayment = () =>{
     const [phone, setPhone] = useState("")
     const [loading, setLoading] = useState("")
     const [error, setError] = useState("")
+     // eslint-disable-next-line
     const [success, setSuccess]= useState("")  
     
     // function to make payment 
@@ -20,7 +21,7 @@ const Mpesapayment = () =>{
         setLoading("Please wait...")
 
         // digital envelope
-        const formdata = new FormData
+        const formdata = new FormData()
 
         // append
         formdata.append("phone" , phone)

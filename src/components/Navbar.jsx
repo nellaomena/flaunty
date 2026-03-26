@@ -8,9 +8,10 @@ const Navbar = () => {
                 {/* <!-- a nav with nav bar content  --> */}
 
                 <nav class="navbar navbar-expand-md bg-light">
-                    <a href="" class="navbar-brand text-danger">FlauntyFlorals
+                     {/* //eslint-disable-next-line */}
+                    <p className='text-danger'>FlauntyFlorals
                         <img src="images/flow.jpg" alt="logo" />
-                    </a>
+                    </p>
                     <button class="navbar-toggler" data-bs-target="#navbarcollapse" data-bs-toggle="collapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
