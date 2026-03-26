@@ -11,7 +11,7 @@ const Signup = () =>{
 
 
     const [loading, setLoading] = useState("")
-    const [success, setSuccess] = useState("")
+    const [success, setSuccess] = useState("") 
     const [error, setError] = useState("")
 
     // FUNCTION TO HANDLE SUBMIT 
