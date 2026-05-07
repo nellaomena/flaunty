@@ -30,7 +30,7 @@ const Addproduct = () => {
         formdata.append("product_photo", product_photo)
 
         try {
-            const response = await axios.post("http://venelahiggs.alwaysdata.net/api/addproduct", formdata)
+            const response = await axios.post("https://venelahiggs.alwaysdata.net/api/addproduct", formdata)
             setSuccess(response.data.message)
             setLoading("")
 

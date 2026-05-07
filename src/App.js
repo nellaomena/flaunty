@@ -6,22 +6,31 @@ import Signin from './components/Signin';
 import Addproduct from './components/Addproduct';
 import Getproduct from './components/Getproduct';
 import Mpesapayment from './components/Mpesapayment';
+import {useState} from "react";
+import Chatbot from './components/Chatbot';
+
+
+
+
 
 import { BrowserRouter, Route, Routes,Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 
-function App() {
+function App(){
+
+  
+  <Route path = '/Signin' element={<Signin/>} />
   return (
     <BrowserRouter>
-    <div className="App">
+        <div className="App">
 
       {/* navbar goes here */}
       <Navbar/>
-
+    
 
 
       <header className="App-header">
-        <h1>Welcome to FlauntyFlorals💄</h1>
+        <h1>🪷Welcome to FlauntyFlorals🪷</h1>
         <img src="images/" alt="" />
         
       </header>
@@ -36,14 +45,23 @@ function App() {
       {/* {routing} */}
 
       <Routes>
+        <Route path = '/Chatbot' element={<Chatbot/>} />
         <Route path = '/' element={<Getproduct/>} />
         <Route path = '/Addproduct' element={<Addproduct/>} />
         <Route path = '/Signup' element= {<Signup/>}/>
         <Route path = '/Signin' element={<Signin/>} />
         <Route path = '/makepayment' element={<Mpesapayment/>} />
       </Routes>
+      <div>
+        <Chatbot/>
+  
+      </div>
+    
 
-      <footer class="bg-danger text-center">
+
+
+      
+      <footer class="bg-light text dark text-center">
         <b class="text-dark">Developed by Shannon &copy; 2026. All rights reserved!</b>
     </footer>
 
@@ -65,6 +83,8 @@ function App() {
     </div>
     </BrowserRouter>
   );
-}
 
-export default App;
+
+}
+  export default App;
+  
