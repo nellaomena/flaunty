@@ -39,7 +39,7 @@ const Footer = () => {
                     <p className='text-light'>We're located in Nairobi CBD;Star Mall shop G-23</p>
             </div>
         </section>
-  
+    
     </div>
   )
 }
