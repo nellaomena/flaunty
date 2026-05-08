@@ -6,7 +6,6 @@ import Signin from './components/Signin';
 import Addproduct from './components/Addproduct';
 import Getproduct from './components/Getproduct';
 import Mpesapayment from './components/Mpesapayment';
-import {useState} from "react";
 import Chatbot from './components/Chatbot';
 
 
