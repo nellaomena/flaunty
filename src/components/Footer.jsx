@@ -36,6 +36,7 @@ const Footer = () => {
                 <br /> <br /> 
                 <p class="text-light">You can reach out to us through the above social media platforms, ie Instagram
                     Facebook and X. Feel free to contact us at any time!</p>
+                    <p className='text-light'>We're located in Nairobi CBD;Star Mall shop G-23</p>
             </div>
         </section>
   
